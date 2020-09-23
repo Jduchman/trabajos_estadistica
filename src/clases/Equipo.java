@@ -1,29 +1,29 @@
 
 package clases;
 
-import java.util.ArrayList;
+import lista.ListaDoble;
 
 public class Equipo {
     private String nombreEquipo;
     private String dt;
     private int puntos;
-    private ArrayList<Jugador> listaJugador;
+    private ListaDoble<Jugador> listaJugador;
 
     public Equipo() {
     }
 
-    public Equipo(String nombreEquipo, String dt, int puntos, ArrayList listaJugador) {
+    public Equipo(String nombreEquipo, String dt, int puntos, ListaDoble listaJugador) {
         this.nombreEquipo = nombreEquipo;
         this.dt = dt;
         this.puntos = puntos;
         this.listaJugador = listaJugador;
     }
 
-    public ArrayList getListaJugador() {
+    public ListaDoble getListaJugador() {
         return listaJugador;
     }
 
-    public void setListaJugador(ArrayList listaJugador) {
+    public void setListaJugador(ListaDoble listaJugador) {
         this.listaJugador = listaJugador;
     }
 
